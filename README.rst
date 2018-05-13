@@ -9,6 +9,21 @@ into a database (and display the saved data).
 .. figure:: https://user-images.githubusercontent.com/15344581/37377008-44c93d20-271f-11e8-8170-5d6071a21b8f.png
    :alt: Schema image
 
+Preperations for Ubuntu 16.04
+=============================
+Python
+------
+
+``sudo apt-get install python3``
+
+``sudo apt-get install python3-pip3``
+
+Docker
+-------
+
+See https://docs.docker.com/install/linux/docker-ce/ubuntu/#upgrade-docker-ce
+
+
 Installation
 ============
 
