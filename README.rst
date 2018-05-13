@@ -16,7 +16,9 @@ Python
 
 ``sudo apt-get install python3``
 
-``sudo apt-get install python3-pip3``
+``sudo apt-get install python-pip3``
+
+``sudo pip --upgrade pip``
 
 Docker
 -------
@@ -29,24 +31,9 @@ Installation
 
 The simplest way is to run ``sudo pip3 install --upgrade telegram_export``,
 after which telegram-export should simply be available as a command: ``telegram-export``
-in the terminal. That's it!
+in the terminal.
 
-If you don't like using ``sudo pip``, you can use ``pip3 install --user telegram_export``,
-but you'll have to add something like ``~/.local/bin/`` to your $PATH to get
-the command available. If you don't want to add to PATH, you can also use
-``python3 -m telegram_export`` anywhere instead of ``telegram-export``. You'll
-have a similar issue if you're using a virtualenv, but if you're using those
-you probably know what you're doing anyway :)
 
-Slow downloads?
----------------
-
-You may also want to install ``cryptg`` with the same method for a speed
-boost when downloading media. Telegram requires a lot of encryption and
-decryption and this can make downloading files especially slow unless
-using a nice fast library like cryptg. One user reported a `speed
-increase of
-1100% <https://github.com/expectocode/telegram-export/issues/29>`__.
 
 Usage
 =====
