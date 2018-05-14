@@ -29,8 +29,8 @@ RUN echo '*** Running updates and installing required packages ***' && \
     apt-get upgrade -y
 
 RUN apt-get install -y  git \
-						python3 \
-						python-pip \
+			python3 \
+			python-pip \
                         sqlite3 \
                         sudo \
                         supervisor \
