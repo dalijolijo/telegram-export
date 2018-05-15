@@ -26,13 +26,13 @@ echo -n "Enter the Name of Output Database Name and Hit [ENTER]: "
 read DB_OUTPUT
 
 #
-# Installation of docker-ce package
+# Installation of docker-ce package (Ubuntu 16.04)
 #
 apt-get update
 sudo apt-get install -y apt-transport-https \
-						ca-certificates \
-						curl \
-						software-properties-common
+			ca-certificates \
+			curl \
+			software-properties-common
 cd /root
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository \
