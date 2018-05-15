@@ -29,6 +29,9 @@ read DB_OUTPUT
 # Installation of docker-ce package (Ubuntu 16.04)
 #
 apt-get update
+sudo apt-get remove -y docker \
+                       docker-engine \
+                       docker.io
 sudo apt-get install -y apt-transport-https \
 			ca-certificates \
 			curl \
