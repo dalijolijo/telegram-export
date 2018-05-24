@@ -136,8 +136,7 @@ async function getUsers () {
   do {
     const { users, count } = await client('channels.getParticipants', {
       channel: inputChannel,
-      //filter: { _: 'channelParticipantsRecent' },
-      filter: { _: 'ChannelParticipantsSearch('')' },
+      filter: { _: 'channelParticipantsRecent' },
       offset: counter * 200,
       limit: 200
     });
@@ -154,7 +153,8 @@ async function getUsers () {
     console.log(`Completed ${percentage.toFixed(2)}%`);
 
     users.forEach(user => {
-      if (user.username) outputStream.write(user.username + EOL);
+      //user.phone + EOL
+      outputStream.write(user.username + "_" + user.first_name + "_" + user.last_name + " ");
     });
   } while (cycles ? counter < cycles : counter < 2);
 }
