@@ -136,7 +136,8 @@ async function getUsers () {
   do {
     const { users, count } = await client('channels.getParticipants', {
       channel: inputChannel,
-      filter: { _: 'channelParticipantsRecent' },
+      //filter: { _: 'channelParticipantsRecent' },
+      filter: { _: 'ChannelParticipantsSearch('')' },
       offset: counter * 200,
       limit: 200
     });
