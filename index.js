@@ -81,7 +81,7 @@ const config = {
   }
 };
 
-const outputStream = fs.createWriteStream(OUTPUT_FILE);
+const outputStream = fs.createWriteStream('OUTPUT_FILE', {flags: 'a'});
 
 // eslint-disable-next-line new-cap
 const client = MTProto(config);
